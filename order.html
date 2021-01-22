@@ -21,4 +21,61 @@ title: Mile High Weights
 <div align="center"><img src="images/black.jpg" alt="header image" class="templatemo-header-img img-responsive cleaner" align="absmiddle">
 		  </div>
 
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"Mile_High","fallback":"true","orgId":"00D5A000000C6jK","ts":""}'>
+<input type=hidden name="oid" value="00D5A000000C6jK">
+<input type=hidden name="retURL" value="http://www.milehighweights.com/thanks.html">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail" value="zdziedziak@gmail.com">    -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+Bar Size:<select  id="00N5A00000H0fCp" name="00N5A00000H0fCp" title="Bar Size"><option value="">--None--</option><option value="Olympic (2 inch bar diameter)">Olympic (2 inch bar diameter)</option>
+<option value="Standard (1 inch bar diameter)">Standard (1 inch bar diameter)</option>
+</select><br>
+
+Weight Size:<select  id="00N5A00000H0fCu" name="00N5A00000H0fCu" title="Weight Size"><option value="">--None--</option><option value="45 lbs">45 lbs</option>
+<option value="25 lbs">25 lbs</option>
+<option value="10 lbs">10 lbs</option>
+</select><br>
+
+Colors:<select  id="00N5A00000H0fCz" name="00N5A00000H0fCz" title="Colors"><option value="">--None--</option><option value="Black">Black</option>
+<option value="Blue">Blue</option>
+<option value="Red">Red</option>
+<option value="Other">Other</option>
+</select><br>
+
+<div class="g-recaptcha" data-sitekey="6Lc0HTgaAAAAABb_Pmm0p5t4PCuRpEuFJiorfSvv"></div><br>
+<input type="submit" name="submit">
+
+</form>
+	
+	
+	
+	
+	
 </div><!-- /.blurb -->
