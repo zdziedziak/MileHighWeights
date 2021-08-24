@@ -75,8 +75,8 @@ article { background-color: rgb(255,255,255); width: 420px; margin-bottom: 20px;
 	transition: 1s;
 }
 .gallery img:hover{
-	transform: scale (1.1);
-	box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+	transform: scale(1.2);
+	#box-shadow: 0 0 7px rgba(0, 0, 0, .5);
 
 }
 
@@ -91,5 +91,5 @@ Add a link to main.css (new markup is in bold):
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mile High Weights</title>
+		<title>Mile High Weights/title>
 		<!-- link to main stylesheet -->
